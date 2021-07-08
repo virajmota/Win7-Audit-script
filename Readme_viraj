@@ -1,0 +1,12 @@
+Instruction for running the audit script based on  CIS Top 20 Security Controls:
+1.	Download the script to a directory (say c:\tools)
+2.	Run Powershell as an administrator
+3.	Go to c:\tools
+4.	Type Set-ExecutionPolicy
+5.	Type  Unrestricted and confirm with Y  (This command is required in order to execute the PowerShell script)
+6.	Type  ./winaudit.ps1 (Script execution will take max 20-30 seconds per machine)
+7.	Report will generated and displayed on the console. Please capture the screen output and paste it in a notepad with Hostname as file name. 
+8.	Type Set-ExecutionPolicy
+9.	Enter Restricted and confirm with Y
+10.	Remove the script file from the server / desktop
+11.	Share the audit results for servers and desktops analysis
